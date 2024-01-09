@@ -1,13 +1,15 @@
 # Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Repo to deploy mirror-node contracts with hardhat
 
-Try running some of the following tasks:
+run: **npm install**
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+then run: **npx hardhat run scripts/deploy.ts --network relay**
+
+the deploy.ts script will deploy a specified contract from deploy.ts script.
+
+you can deploy any contract that is in the contracts folder
+
+It will automatically connect it to you local-node network, 
+this config is already defined in the hardhat.config.ts to use local-node properties so 
+you don't have to do anything.
